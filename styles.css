@@ -1,0 +1,116 @@
+* {
+	box-sizing: border-box;
+	font-family: "DM Sans";
+	font-weight: 500;
+}
+
+body {
+	background-color: #f6f5f6;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+.Social {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"a"
+		"b"
+		"c"
+		"d"
+		"e"
+		"f"
+		"g"
+		"h";
+	gap: 10px;
+	text-align: center;
+}
+
+.Social div {
+	border-radius: 10px;
+	padding: 10px;
+	width: 95%;
+}
+
+.header {
+	background-color: #7551dc;
+	color: white;
+	grid-area: a;
+}
+
+.span {
+	color: #7551dc;
+}
+
+span {
+	color: #ffcc6a;
+}
+
+.classes {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	text-align: start;
+}
+
+.head1 {
+	background-color: #ffffff;
+	color: #121212;
+	grid-area: b;
+}
+
+.head2 {
+	background-color: #ffcc6a;
+	color: #121212;
+	height: 20vh;
+	grid-area: c;
+}
+
+.Schedule {
+	background-color: #dbd1fc;
+	color: #121212;
+	grid-area: d;
+}
+
+.Grow {
+	background-color: #7551dc;
+	color: #ffffff;
+	grid-area: e;
+}
+
+.pourcentage {
+	background-color: #ffffff;
+	color: #121212;
+	text-align: start;
+	grid-area: f;
+}
+
+.create {
+	background-color: #f9eee2;
+	color: #121212;
+	text-align: start;
+	grid-area: g;
+}
+
+.write {
+	background-color: #ffcc6a;
+	color: #121212;
+	grid-area: h;
+	text-align: start;
+}
+
+@media screen and (width: 400px) {
+	.Social {
+		grid-template-columns: 2fr;
+		grid-template-areas:
+			"a a"
+			"b c"
+			"d d"
+			"e e"
+			"f f"
+			"g h";
+	}
+}
